@@ -127,7 +127,8 @@ less_chatty = False
 # \dsn_alias - name of dsn alias if -D option is used (empty otherwise)
 # \x1b[...m - insert ANSI escape sequence
 # eg: prompt = '\x1b[35m\u@\x1b[32m\h:\x1b[36m\d>'
-prompt = "\u@\h:\d> "
+# prompt = "\u@\h:\d> "
+prompt = '\x1b[35m\u@\x1b[36m\d\x1b[32m>'
 
 # Number of lines to reserve for the suggestion menu
 min_num_menu_lines = 4
@@ -141,7 +142,7 @@ null_string = <null>
 # manage pager on startup
 enable_pager = True
 
-# Use keyring to automatically save and load password in a secure manner 
+# Use keyring to automatically save and load password in a secure manner
 keyring = True
 [colors]
 completion-menu.completion.current = "bg:#ffffff #000000"
